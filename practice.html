@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice 5</title>
+    </head>
+    <body>
+        
+       <!-- <button onclick="console.log(`CartQuantity : ${cartQuantity}`);">
+            Show Quantity
+        </button>
+        <button onclick="cartQuantity++; console.log(`CartQuantity : ${cartQuantity}`);">
+            Add to Cart
+        </button>
+        <button onclick="updateCartQuantity(2);">+2</button>
+        <button onclick="updateCartQuantity(3);">+3</button>
+        <button onclick="console.log('cart Quantity reset'); cartQuantity = 0; console.log(`cartQuantity : ${cartQuantity}`);">Reset Quantity</button>
+        <button onclick="updateCartQuantity(4);">+4</button>
+        <button onclick="updateCartQuantity(5);">+5</button>
+        <button onclick="cartQuantity--; console.log(`cartQuantity : ${cartQuantity}`);">Remove from cart</button>
+        <button onclick="cartQuantity -= 2; console.log(`cartQuantity : ${cartQuantity}`);">-2</button>
+        <button onclick="cartQuantity -= 3; console.log(`cartQuantity : ${cartQuantity}`);">-3</button>-->
+        <!--<p>
+            <button onclick="updateCalculation(1)">1</button>
+            <button onclick="updateCalculation(2)">2</button>
+            <button onclick="updateCalculation(3)">3</button>
+            <button onclick="calculation +=' + '; console.log(calculation)">+</button>
+           </p>
+           <p>
+               <button onclick="updateCalculation(4)">4</button>
+               <button onclick="updateCalculation(5)">5</button>
+               <button onclick="updateCalculation(6)">6</button>
+               <button onclick="calculation +=' - '; console.log(calculation)">-</button>
+           </p>
+           <p>
+               <button onclick="updateCalculation(6)">7</button>
+               <button onclick="updateCalculation(7)">8</button>
+               <button onclick="updateCalculation(8)">9</button>
+               <button onclick="calculation +=' * '; console.log(calculation)">*</button>
+           </p>
+           <p>
+               <button onclick="updateCalculation(0)">0</button>
+               <button onclick="calculation +='.'; console.log(calculation)">.</button>
+               <button onclick="calculation +=' / '; console.log(calculation)">/</button>
+               <button onclick="eval(calculation); calculation=eval(calculation); console.log(calculation)">=</button>
+           </p>
+           <button onclick="console.log('cleared.')">clear</button>
+        -->
+
+    </body>
+    <script>
+           /* 
+         let cartQuantity=0;
+         function updateCartQuantity(value){
+            if(cartQuantity==10){
+              alert('The cart is full');
+              return
+            }
+            cartQuantity  +=  value; console.log(`cartQuantity : ${cartQuantity}`);
+         }
+
+     let calculation ='';
+         function updateCalculation(value){
+            calculation +=value;
+            console.log(calculation);
+         }
+        
+        let name="Adhi";
+        console.log(`My name is: ${name}`);
+
+        let cost=  5 +(2 * 3) + 9;
+        let tax=  (5 +(2 * 3) + 9)* 0.1;
+        console.log(`Cost of food: $${cost}`);
+        console.log(`Tax (10%): $${tax}`);
+
+        let totalCost= cost + tax ;
+        console.log(`Total cost: $${totalCost}`);
+        function greet(name){
+            if(!name){  
+                console.log('Hi there');
+            }
+            else{
+                console.log(`Hello ${name}`);
+            }
+        }
+        greet();
+        function convertToFarenheit(celsius)
+        {
+          Farenheit=(celsius*9/5)+32;
+          
+           return Farenheit;
+        }
+        convertToFarenheit(25); 
+        console.log(Farenheit);
+       
+        function convertToCelsius(fahrenheit){
+            Celsius = (fahrenheit-32)* 5 / 9;
+            return Celsius;
+        }
+        convertToCelsius(86);
+        console.log(Celsius);
+       
+         function convertToFarenheit(celsius)
+            {
+                return (celsius * 9 / 5) + 32;
+            }
+            function convertToCelsius(fahrenheit) 
+            {
+                return (fahrenheit - 32) * 5 / 9;
+            }
+        function convertTemperature(degrees,unit){
+            if(unit === 'C'){
+                const result = convertToFarenheit(degrees);
+                return `${result}F`
+            }
+            else if(unit === 'F'){
+                const result= convertToCelsius(degrees);
+                return `${result}C`
+            }
+           
+
+        }
+        console.log(convertTemperature(25,'C'));
+          
+       function convertLength(length,from,to){
+         if(from && to === 'lbs'){
+             return `Invalid unit: lbs`
+         }
+
+         if(from === 'km' && to === 'miles'){
+            const result = length * 0.62137119;
+            return `${result}miles`
+         }
+         else if(from ==='miles' && to==='km'){
+            const result = length * 1.6;
+            return `${result}Km`
+         }
+         else if(from === to){
+            return `${length}${from}`
+         }
+         if(from||to==='ft'){
+            if(from === 'miles' && to==='ft'){
+              const result = length * 5280;
+              return `${result}ft`
+            }
+            else if(from === 'km' && to==='ft'){
+              const result = length * 3281;
+              return `${result}${to}`
+            }
+         }
+       }
+       console.log(convertLength(50,'miles','km'));
+       console.log(convertLength(32,'km','miles'));
+       console.log(convertLength(50,'km','km'));
+       console.log(convertLength(5,'miles','km'));
+       console.log(convertLength(5,'miles','ft'));
+       console.log(convertLength(5,'km','ft'));
+       console.log(convertLength(5,'lbs','lbs'));
+
+     
+
+       const basket = {
+        name:'basketball',
+        price:2095,
+        ['delivery-time'] : '3 days'
+       };
+       basket.price += 500;
+       console.log(basket);  
+*/
+       
+       /*
+       function comparePrice(product1,product2){
+         if(product1>product2){
+            return console.log(product1);
+         }
+         else{
+            return console.log(product2);
+         }
+       }
+       comparePrice(20,30);
+
+       function isSameProduct(product1,product2){
+          if(product1.name === product2.name && product.price === product2.price){
+                return true;
+            }
+          
+          else {
+            return false;
+           }
+        }
+          const product1={
+           name:'shoe',
+           price: 200
+          };
+
+         const product2={
+          name:'shocks',
+          price : 100
+         };
+       
+       console.log(isSameProduct(product1,product2));*/
+       /*
+       function isSameProduct(product1, product2) {
+        if (
+          product1.name === product2.name &&
+          product1.price === product2.price
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      const product1 = {
+        name: 'basketball',
+        price: 2095
+      };
+
+      const product2 = {
+        name: 'socks',
+        price: 1090
+      };
+      console.log(isSameProduct(product1, product2));
+      console.log('GOOD MORNING'.toLocaleLowerCase());
+      console.log('test'.repeat(2));*/
+      
+    </script>
+</html>

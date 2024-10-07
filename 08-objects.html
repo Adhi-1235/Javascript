@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+    
+    <script>
+      /*
+        const product={
+          name:'raj',
+          price:2000
+        } 
+        console.log(typeof product);
+        console.log(product.name);
+
+        product.name='sun';
+        console.log(product);
+
+        product.tax= 20;
+        console.log(product);
+
+        delete product.tax;
+        console.log(product);
+       
+       const product2={
+        name:'shirt',
+        'delivery-time' : '1 day',
+        rating:{
+          star:4,
+          count:87
+        },
+        fun: function par(){
+            console.log('delivered');
+        }
+       }
+       console.log(product2);
+       console.log(product2['name']);
+       console.log(product2['delivery-time']);
+       console.log(product2.rating.count);
+       product2.fun();
+
+       console.log(JSON.stringify(product2));
+       
+       const str=JSON.stringify(product2);
+       console.log(JSON.parse(str)); */
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+
+        const object1={
+          message:'Good morning!'
+        };
+
+        const object2 = object1;
+        object1.message = 'Good job!';
+        console.log(object1);
+        console.log(object2);
+
+        const object3 = {
+          message : 'Good job!'
+        };
+
+        console.log(object3 === object1);
+        console.log(object2=== object1);
+
+        const object4 = {
+          message : 'Good job!',
+          price:799
+        };
+
+        //const message = object4.message;
+        const {message,price} = object4;
+        console.log(message);
+        console.log(price);
+
+        const object5 ={
+          message,
+          //method: function func(){
+          //  console.log('method');
+          //}
+          method(){
+            console.log('method');
+          }
+        };
+        console.log(object5);
+        object5.method();
+
+       
+    </script>
+  </body>
+</html>
+    

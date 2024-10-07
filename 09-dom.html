@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+       <button>
+           9a
+       </button>
+       <button class="js-button">9b</button>
+       <button class="head-element" onclick="
+        document.querySelector('.js-choose').innerHTML=`you choose:heads`;">heads</button>
+       <button class="tail-element" onclick="document.querySelector('.js-choose').innerHTML=`you choose:tails`;">tails</button>
+       <p class="js-choose"></p>
+       <input placeholder="Name" class="text-value" onkeydown="enterKey(event);">
+       <button class="submit-buton" 
+       onclick="enterkey();
+       ">submit</button>
+       <p class="js-display"></p>
+    <script>
+        
+        function enterKey(event){
+             if(event.key==='Enter'){
+              const brand = document.querySelector('.text-value');
+              document.querySelector('.js-display').innerHTML=`your name is: ${brand.value}`;
+             }
+        }
+        
+       /*
+      console.log(document.title);
+      document.title='Good';
+       
+      console.log(document.body);
+      console.log(typeof document.body);
+ 
+      console.log(document.body.innerHTML);
+      document.body.innerHTML='changed';
+        document.querySelector('button').innerHTML = 'change';
+    
+     console.log(document.querySelector('button'));
+   
+     
+     console.log(document.querySelector('.js-button').innerHTML='9b done!'); */
+
+    </script>
+  </body>
+</html>
+    
